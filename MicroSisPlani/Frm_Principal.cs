@@ -24,6 +24,12 @@ using System.IO;
 using System.Runtime.InteropServices;
 using DocumentFormat.OpenXml.Drawing;
 using DevComponents.DotNetBar;
+using DocumentFormat.OpenXml.Spreadsheet;
+using SpreadsheetLight;
+using Path = System.IO.Path;
+using Color = System.Drawing.Color;
+using Font = System.Drawing.Font;
+
 
 namespace MicroSisPlani
 {
@@ -205,9 +211,10 @@ namespace MicroSisPlani
             lis.HideSelection = false;
 
             //Las columnas
-            lis.Columns.Add("ID producto", 40, HorizontalAlignment.Center);
-            lis.Columns.Add("Codigo", 190, HorizontalAlignment.Center);
+            lis.Columns.Add("ID producto", 0, HorizontalAlignment.Center);
+            lis.Columns.Add("Codigo", 150, HorizontalAlignment.Center);
             lis.Columns.Add("Descripcion", 440, HorizontalAlignment.Left);
+            lis.Columns.Add("Tipo", 70, HorizontalAlignment.Center);
             lis.Columns.Add("Cantidad", 60, HorizontalAlignment.Center);
             lis.Columns.Add("CantidadMinima", 60, HorizontalAlignment.Right);
             lis.Columns.Add("Categoria", 140, HorizontalAlignment.Center);
@@ -236,6 +243,7 @@ namespace MicroSisPlani
                 //columnas
                 list.SubItems.Add(dr["codigo"].ToString());
                 list.SubItems.Add(dr["descripcion"].ToString()).BackColor = System.Drawing.Color.Red; ;
+                list.SubItems.Add(dr["tipo"].ToString());
                 list.SubItems.Add(dr["cantidadActual"].ToString());
                 list.SubItems.Add(dr["cantidadMinima"].ToString());
                 list.SubItems.Add(dr["categoria"].ToString());
@@ -500,12 +508,14 @@ namespace MicroSisPlani
             lis.HideSelection = false;
 
             //Las columnas
-            lis.Columns.Add("ID", 60, HorizontalAlignment.Center);
+            lis.Columns.Add("ID", 0, HorizontalAlignment.Center);
             lis.Columns.Add("Codigo", 200, HorizontalAlignment.Center);
             lis.Columns.Add("Descripcion", 340, HorizontalAlignment.Left);
             lis.Columns.Add("Categoria", 140, HorizontalAlignment.Center);
             lis.Columns.Add("Precio", 100, HorizontalAlignment.Center);
             lis.Columns.Add("Cantidad", 110, HorizontalAlignment.Center);
+            lis.Columns.Add("Tipo", 60, HorizontalAlignment.Left);
+
         }
         private void Configurar_ListView_Venta()
         {
@@ -548,6 +558,7 @@ namespace MicroSisPlani
                 list.SubItems.Add(dr["categoria"].ToString());
                 list.SubItems.Add(dr["precioVenta"].ToString());
                 list.SubItems.Add(dr["cantidadActual"].ToString());
+                list.SubItems.Add(dr["tipo"].ToString());
 
                 lsv_productos2.Items.Add(list); //Si no se pone el listView no se llenara
             }
@@ -1994,8 +2005,8 @@ namespace MicroSisPlani
             e.DrawDefault = true;
 
             // Obtener el valor de la segunda columna
-            int cantidad = Int32.Parse(e.Item.SubItems[3].Text);
-            int cantidadMinima = Int32.Parse(e.Item.SubItems[4].Text);
+            int cantidad = Int32.Parse(e.Item.SubItems[4].Text);
+            int cantidadMinima = Int32.Parse(e.Item.SubItems[5].Text);
             // Comparar con el valor específico y cambiar el color de fondo
             if (cantidad <= cantidadMinima)
             {
@@ -2471,6 +2482,99 @@ namespace MicroSisPlani
             }
 
 
+        }
+
+        private void txt_PagoEfectivo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            string fecha = DateTime.Now.ToString("yyyy-MM-dd");
+
+            string nombreUsuario = Environment.UserName;
+            // Obtener la ruta del escritorio del usuario
+            string rutaEscritorio = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Reportes");
+
+            // Verificar si la carpeta "Reportes" existe, si no, crearla
+            if (!Directory.Exists(rutaEscritorio))
+            {
+                Directory.CreateDirectory(rutaEscritorio);
+            }
+
+            string rutaCompleta = Path.Combine(rutaEscritorio, $"Inventario_{fecha}.xlsx");
+
+
+            SLDocument sl = new SLDocument();
+
+            sl.SetCellValue("D2", "Lista del Inventario");
+            SLStyle estiloT = sl.CreateStyle();
+            estiloT.Font.FontName = "Arial";
+            estiloT.Font.FontSize = 14;
+            estiloT.Font.Bold = true;
+            sl.SetCellStyle("D2", estiloT);
+            sl.MergeWorksheetCells("D2", "F2");
+
+            int celdaCabecera = 6, celdaInicio = 6;
+
+            sl.RenameWorksheet(SLDocument.DefaultFirstSheetName, "Inventario");
+            sl.SetCellValue("A" + celdaCabecera, "ID");
+            sl.SetCellValue("B" + celdaCabecera, "Codigo");
+            sl.SetCellValue("C" + celdaCabecera, "Producto");
+            sl.SetCellValue("D" + celdaCabecera, "Tipo");
+            sl.SetCellValue("E" + celdaCabecera, "Precio Compra");
+            sl.SetCellValue("F" + celdaCabecera, "Precio Venta");
+            sl.SetCellValue("G" + celdaCabecera, "Precio Mayoreo");
+            sl.SetCellValue("H" + celdaCabecera, "Precio Especial");
+            sl.SetCellValue("I" + celdaCabecera, "Categoria");
+            sl.SetCellValue("J" + celdaCabecera, "Cantidad");
+            sl.SetCellValue("K" + celdaCabecera, "Cantidad Minima");
+
+            SLStyle estiloEncabezado = sl.CreateStyle();
+            estiloEncabezado.Font.FontName = "Arial";
+            estiloEncabezado.Font.FontSize = 12;
+            estiloEncabezado.Font.Bold = true;
+            sl.SetCellStyle("A" + celdaCabecera, "K" + celdaCabecera, estiloEncabezado);
+          
+            for (int i = 0; i < productosInventario.Rows.Count; i++)
+            {
+                celdaCabecera++;
+
+                DataRow dr = productosInventario.Rows[i];
+
+                sl.SetCellValue("A" + celdaCabecera, dr["id"].ToString());
+                sl.SetCellValue("B" + celdaCabecera, dr["codigo"].ToString());
+                sl.SetCellValue("C" + celdaCabecera, dr["descripcion"].ToString());
+                sl.SetCellValue("D" + celdaCabecera, dr["tipo"].ToString());
+                sl.SetCellValue("E" + celdaCabecera, dr["precioCompra"].ToString());
+                sl.SetCellValue("F" + celdaCabecera, dr["precioVenta"].ToString());
+                sl.SetCellValue("G" + celdaCabecera, dr["precioMayoreo"].ToString());
+                sl.SetCellValue("H" + celdaCabecera, dr["precioEspecial"].ToString());
+                sl.SetCellValue("I" + celdaCabecera, dr["categoria"].ToString());
+                sl.SetCellValue("J" + celdaCabecera, dr["cantidadActual"].ToString());
+                sl.SetCellValue("K" + celdaCabecera, dr["cantidadMinima"].ToString());
+            }
+
+            
+
+            sl.AutoFitColumn("A", "K");
+
+            bool falla = false;
+
+            try
+            {
+                sl.SaveAs(rutaCompleta);
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show("Error: " + x.Message);
+                falla = true;
+            }
+            if (falla == false)
+            {
+                MessageBox.Show("Reporte Creado");
+            }
         }
     }
 }

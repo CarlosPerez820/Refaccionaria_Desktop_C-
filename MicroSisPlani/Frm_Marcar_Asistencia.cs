@@ -18,6 +18,10 @@ using MicroSisPlani.Msm_Forms;
 using SpreadsheetLight;
 using SpreadsheetLight.Drawing;
 using DocumentFormat.OpenXml.Spreadsheet;
+using ExcelDataReader;
+using Excel = Microsoft.Office.Interop.Excel;
+using Microsoft.Office.Interop.Excel;
+using DataTable = System.Data.DataTable;
 
 namespace MicroSisPlani
 {

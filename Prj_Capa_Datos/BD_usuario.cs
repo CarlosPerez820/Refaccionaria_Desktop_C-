@@ -21,7 +21,10 @@ namespace Prj_Capa_Datos
 
             try
             {
+
                 cn.Open();
+
+                //MessageBox.Show("Conexion a la bd exitosa");
 
                 // Crea un objeto MySqlCommand con la consulta SQL y la conexión
                 MySqlCommand query = new MySqlCommand("SELECT * FROM usuarios", cn);
@@ -44,6 +47,7 @@ namespace Prj_Capa_Datos
                 {
                     cn.Close();
                 }
+                Console.WriteLine(ex.Message);
                 MessageBox.Show("Error en Listar Usuarios" + ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 return null;

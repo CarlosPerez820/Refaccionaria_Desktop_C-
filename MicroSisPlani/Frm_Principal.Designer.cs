@@ -57,6 +57,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_titulo1 = new System.Windows.Forms.Panel();
             this.elTabPage2 = new Klik.Windows.Forms.v1.EntryLib.ELTabPage();
+            this.btnExportar = new Klik.Windows.Forms.v1.EntryLib.ELButton();
+            this.elLabel1 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.lbl_precioProducto = new System.Windows.Forms.Label();
             this.lblNombreProducto = new System.Windows.Forms.Label();
             this.btn_bajosInventario = new Klik.Windows.Forms.v1.EntryLib.ELButton();
@@ -71,7 +73,6 @@
             this.ElLabel6 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.ElLabel4 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.ElLabel2 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
-            this.ElLabel1 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbl_lupaPerso = new System.Windows.Forms.Label();
             this.txt_Buscar = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -94,6 +95,7 @@
             this.Bt_NewPerso = new System.Windows.Forms.Button();
             this.elDivider1 = new Klik.Windows.Forms.v1.EntryLib.ELDivider();
             this.elTabPage3 = new Klik.Windows.Forms.v1.EntryLib.ELTabPage();
+            this.elLabel37 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.btn_aplicarAnticipo = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.txt_Anticipo = new System.Windows.Forms.TextBox();
             this.btn_anticipo = new Klik.Windows.Forms.v1.EntryLib.ELButton();
@@ -141,7 +143,6 @@
             this.elLabel33 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel34 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel35 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
-            this.elLabel37 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.lbl_totalventas = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -182,6 +183,8 @@
             this.elTabPage5 = new Klik.Windows.Forms.v1.EntryLib.ELTabPage();
             this.elLabel18 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbl_productoDevolucion = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
             this.btn_realizarDevolucion = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.elLabel41 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel40 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
@@ -295,8 +298,6 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.elDivider7 = new Klik.Windows.Forms.v1.EntryLib.ELDivider();
-            this.label48 = new System.Windows.Forms.Label();
-            this.lbl_productoDevolucion = new System.Windows.Forms.Label();
             this.pnl_titu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTab1)).BeginInit();
@@ -313,6 +314,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bt_personal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage2)).BeginInit();
             this.elTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExportar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_bajosInventario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel27)).BeginInit();
@@ -324,13 +327,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.ElLabel6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ElLabel1)).BeginInit();
             this.panel4.SuspendLayout();
             this.SubMenu_Person.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage3)).BeginInit();
             this.elTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.elLabel37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_aplicarAnticipo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_anticipo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnt_formularioDescuento)).BeginInit();
@@ -351,7 +354,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.elLabel33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elLabel37)).BeginInit();
             this.panel5.SuspendLayout();
             this.subMenuAsistencia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel11)).BeginInit();
@@ -436,7 +438,7 @@
             this.pnl_titu.Controls.Add(this.btn_Salir);
             this.pnl_titu.Location = new System.Drawing.Point(0, 0);
             this.pnl_titu.Name = "pnl_titu";
-            this.pnl_titu.Size = new System.Drawing.Size(1298, 809);
+            this.pnl_titu.Size = new System.Drawing.Size(1417, 809);
             this.pnl_titu.TabIndex = 5;
             this.pnl_titu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_titu_Paint);
             this.pnl_titu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titu_MouseMove);
@@ -448,7 +450,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(518, 4);
+            this.button3.Location = new System.Drawing.Point(637, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(32, 32);
             this.button3.TabIndex = 139;
@@ -914,6 +916,8 @@
             this.elTabPage2.CaptionTextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.elTabPage2.CaptionTextStyle.Text = "     Almacen";
             this.elTabPage2.CaptionTextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.elTabPage2.Controls.Add(this.btnExportar);
+            this.elTabPage2.Controls.Add(this.elLabel1);
             this.elTabPage2.Controls.Add(this.lbl_precioProducto);
             this.elTabPage2.Controls.Add(this.lblNombreProducto);
             this.elTabPage2.Controls.Add(this.btn_bajosInventario);
@@ -928,7 +932,6 @@
             this.elTabPage2.Controls.Add(this.ElLabel6);
             this.elTabPage2.Controls.Add(this.ElLabel4);
             this.elTabPage2.Controls.Add(this.ElLabel2);
-            this.elTabPage2.Controls.Add(this.ElLabel1);
             this.elTabPage2.Controls.Add(this.panel4);
             this.elTabPage2.Controls.Add(this.lsv_person);
             this.elTabPage2.Controls.Add(this.Lbl_total);
@@ -946,6 +949,56 @@
             this.elTabPage2.TabIndexChanged += new System.EventHandler(this.elTabPage2_TabIndexChanged);
             this.elTabPage2.Click += new System.EventHandler(this.elTabPage2_Click);
             this.elTabPage2.Enter += new System.EventHandler(this.elTabPage2_Enter);
+            // 
+            // btnExportar
+            // 
+            this.btnExportar.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.btnExportar.BackgroundStyle.SolidColor = System.Drawing.Color.ForestGreen;
+            this.btnExportar.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
+            this.btnExportar.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
+            this.btnExportar.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
+            this.btnExportar.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
+            this.btnExportar.BorderStyle.SolidColor = System.Drawing.Color.YellowGreen;
+            this.btnExportar.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.btnExportar.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.btnExportar.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnExportar.Location = new System.Drawing.Point(1099, 488);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(123, 34);
+            this.btnExportar.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExportar.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExportar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExportar.StateStyles.HoverStyle.BorderGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExportar.StateStyles.HoverStyle.BorderGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExportar.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExportar.StateStyles.HoverStyle.ForegroundImage = ((System.Drawing.Image)(resources.GetObject("resource.ForegroundImage")));
+            this.btnExportar.StateStyles.HoverStyle.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportar.TabIndex = 463;
+            this.btnExportar.TextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportar.TextStyle.ForeColor = System.Drawing.Color.White;
+            this.btnExportar.TextStyle.Text = "Exportar";
+            this.btnExportar.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnExportar.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            // 
+            // elLabel1
+            // 
+            this.elLabel1.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.elLabel1.BackgroundStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
+            this.elLabel1.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
+            this.elLabel1.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
+            this.elLabel1.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
+            this.elLabel1.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
+            this.elLabel1.Location = new System.Drawing.Point(616, 110);
+            this.elLabel1.Name = "elLabel1";
+            this.elLabel1.Size = new System.Drawing.Size(74, 24);
+            this.elLabel1.TabIndex = 462;
+            this.elLabel1.TabStop = false;
+            this.elLabel1.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elLabel1.TextStyle.ForeColor = System.Drawing.Color.DarkCyan;
+            this.elLabel1.TextStyle.Text = "Tipo";
+            this.elLabel1.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.elLabel1.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
             // lbl_precioProducto
             // 
@@ -987,7 +1040,7 @@
             this.btn_bajosInventario.StateStyles.HoverStyle.BorderGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_bajosInventario.StateStyles.HoverStyle.BorderGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_bajosInventario.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_bajosInventario.StateStyles.HoverStyle.ForegroundImage = ((System.Drawing.Image)(resources.GetObject("resource.ForegroundImage")));
+            this.btn_bajosInventario.StateStyles.HoverStyle.ForegroundImage = ((System.Drawing.Image)(resources.GetObject("resource.ForegroundImage1")));
             this.btn_bajosInventario.StateStyles.HoverStyle.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_bajosInventario.TabIndex = 459;
             this.btn_bajosInventario.TextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1094,7 +1147,7 @@
             this.btn_importar.StateStyles.HoverStyle.BorderGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_importar.StateStyles.HoverStyle.BorderGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_importar.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_importar.StateStyles.HoverStyle.ForegroundImage = ((System.Drawing.Image)(resources.GetObject("resource.ForegroundImage1")));
+            this.btn_importar.StateStyles.HoverStyle.ForegroundImage = ((System.Drawing.Image)(resources.GetObject("resource.ForegroundImage2")));
             this.btn_importar.StateStyles.HoverStyle.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_importar.TabIndex = 454;
             this.btn_importar.TextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1181,9 +1234,9 @@
             this.ElLabel4.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel4.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel4.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.ElLabel4.Location = new System.Drawing.Point(283, 109);
+            this.ElLabel4.Location = new System.Drawing.Point(196, 109);
             this.ElLabel4.Name = "ElLabel4";
-            this.ElLabel4.Size = new System.Drawing.Size(400, 24);
+            this.ElLabel4.Size = new System.Drawing.Size(456, 24);
             this.ElLabel4.TabIndex = 445;
             this.ElLabel4.TabStop = false;
             this.ElLabel4.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1201,9 +1254,9 @@
             this.ElLabel2.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel2.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel2.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.ElLabel2.Location = new System.Drawing.Point(64, 109);
+            this.ElLabel2.Location = new System.Drawing.Point(15, 109);
             this.ElLabel2.Name = "ElLabel2";
-            this.ElLabel2.Size = new System.Drawing.Size(213, 24);
+            this.ElLabel2.Size = new System.Drawing.Size(187, 24);
             this.ElLabel2.TabIndex = 443;
             this.ElLabel2.TabStop = false;
             this.ElLabel2.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1211,26 +1264,6 @@
             this.ElLabel2.TextStyle.Text = "codigo";
             this.ElLabel2.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ElLabel2.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
-            // 
-            // ElLabel1
-            // 
-            this.ElLabel1.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.ElLabel1.BackgroundStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.ElLabel1.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
-            this.ElLabel1.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
-            this.ElLabel1.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
-            this.ElLabel1.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.ElLabel1.Location = new System.Drawing.Point(9, 109);
-            this.ElLabel1.Name = "ElLabel1";
-            this.ElLabel1.Size = new System.Drawing.Size(60, 24);
-            this.ElLabel1.TabIndex = 442;
-            this.ElLabel1.TabStop = false;
-            this.ElLabel1.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ElLabel1.TextStyle.ForeColor = System.Drawing.Color.DarkCyan;
-            this.ElLabel1.TextStyle.Text = "ID";
-            this.ElLabel1.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ElLabel1.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
-            this.ElLabel1.Click += new System.EventHandler(this.ElLabel1_Click);
             // 
             // panel4
             // 
@@ -1295,6 +1328,7 @@
             // 
             // SubMenu_Person
             // 
+            this.SubMenu_Person.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.SubMenu_Person.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator1,
             this.toolStripSeparator4,
@@ -1483,6 +1517,7 @@
             this.elTabPage3.CaptionTextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.elTabPage3.CaptionTextStyle.Text = "     Ventas";
             this.elTabPage3.CaptionTextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.elTabPage3.Controls.Add(this.elLabel37);
             this.elTabPage3.Controls.Add(this.btn_aplicarAnticipo);
             this.elTabPage3.Controls.Add(this.txt_Anticipo);
             this.elTabPage3.Controls.Add(this.btn_anticipo);
@@ -1530,7 +1565,6 @@
             this.elTabPage3.Controls.Add(this.elLabel33);
             this.elTabPage3.Controls.Add(this.elLabel34);
             this.elTabPage3.Controls.Add(this.elLabel35);
-            this.elTabPage3.Controls.Add(this.elLabel37);
             this.elTabPage3.Controls.Add(this.button1);
             this.elTabPage3.Controls.Add(this.lbl_totalventas);
             this.elTabPage3.Controls.Add(this.panel5);
@@ -1547,6 +1581,25 @@
             this.elTabPage3.Name = "elTabPage3";
             this.elTabPage3.Size = new System.Drawing.Size(1478, 705);
             this.elTabPage3.Click += new System.EventHandler(this.elTabPage3_Click);
+            // 
+            // elLabel37
+            // 
+            this.elLabel37.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.elLabel37.BackgroundStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
+            this.elLabel37.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
+            this.elLabel37.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
+            this.elLabel37.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
+            this.elLabel37.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
+            this.elLabel37.Location = new System.Drawing.Point(900, 82);
+            this.elLabel37.Name = "elLabel37";
+            this.elLabel37.Size = new System.Drawing.Size(102, 24);
+            this.elLabel37.TabIndex = 535;
+            this.elLabel37.TabStop = false;
+            this.elLabel37.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elLabel37.TextStyle.ForeColor = System.Drawing.Color.DarkCyan;
+            this.elLabel37.TextStyle.Text = "Tipo";
+            this.elLabel37.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.elLabel37.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
             // btn_aplicarAnticipo
             // 
@@ -1645,6 +1698,7 @@
             this.txt_PagoEfectivo.Name = "txt_PagoEfectivo";
             this.txt_PagoEfectivo.Size = new System.Drawing.Size(116, 20);
             this.txt_PagoEfectivo.TabIndex = 528;
+            this.txt_PagoEfectivo.TextChanged += new System.EventHandler(this.txt_PagoEfectivo_TextChanged);
             this.txt_PagoEfectivo.Enter += new System.EventHandler(this.txt_PagoEfectivo_Enter);
             this.txt_PagoEfectivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_PagoEfectivo_KeyPress);
             // 
@@ -2207,7 +2261,7 @@
             this.elLabel31.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel31.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel31.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.elLabel31.Location = new System.Drawing.Point(247, 83);
+            this.elLabel31.Location = new System.Drawing.Point(159, 83);
             this.elLabel31.Name = "elLabel31";
             this.elLabel31.Size = new System.Drawing.Size(397, 24);
             this.elLabel31.TabIndex = 490;
@@ -2227,7 +2281,7 @@
             this.elLabel32.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel32.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel32.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.elLabel32.Location = new System.Drawing.Point(767, 83);
+            this.elLabel32.Location = new System.Drawing.Point(673, 82);
             this.elLabel32.Name = "elLabel32";
             this.elLabel32.Size = new System.Drawing.Size(100, 24);
             this.elLabel32.TabIndex = 489;
@@ -2246,7 +2300,7 @@
             this.elLabel33.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel33.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel33.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.elLabel33.Location = new System.Drawing.Point(869, 83);
+            this.elLabel33.Location = new System.Drawing.Point(773, 83);
             this.elLabel33.Name = "elLabel33";
             this.elLabel33.Size = new System.Drawing.Size(133, 24);
             this.elLabel33.TabIndex = 488;
@@ -2266,7 +2320,7 @@
             this.elLabel34.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel34.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel34.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.elLabel34.Location = new System.Drawing.Point(641, 83);
+            this.elLabel34.Location = new System.Drawing.Point(555, 81);
             this.elLabel34.Name = "elLabel34";
             this.elLabel34.Size = new System.Drawing.Size(120, 24);
             this.elLabel34.TabIndex = 487;
@@ -2286,7 +2340,7 @@
             this.elLabel35.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel35.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel35.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.elLabel35.Location = new System.Drawing.Point(109, 86);
+            this.elLabel35.Location = new System.Drawing.Point(20, 83);
             this.elLabel35.Name = "elLabel35";
             this.elLabel35.Size = new System.Drawing.Size(142, 24);
             this.elLabel35.TabIndex = 486;
@@ -2296,25 +2350,6 @@
             this.elLabel35.TextStyle.Text = "Codigo";
             this.elLabel35.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.elLabel35.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
-            // 
-            // elLabel37
-            // 
-            this.elLabel37.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.elLabel37.BackgroundStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.elLabel37.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
-            this.elLabel37.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
-            this.elLabel37.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
-            this.elLabel37.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.elLabel37.Location = new System.Drawing.Point(18, 86);
-            this.elLabel37.Name = "elLabel37";
-            this.elLabel37.Size = new System.Drawing.Size(95, 24);
-            this.elLabel37.TabIndex = 484;
-            this.elLabel37.TabStop = false;
-            this.elLabel37.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.elLabel37.TextStyle.ForeColor = System.Drawing.Color.DarkCyan;
-            this.elLabel37.TextStyle.Text = "ID";
-            this.elLabel37.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.elLabel37.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
             // button1
             // 
@@ -2424,6 +2459,7 @@
             // 
             // subMenuAsistencia
             // 
+            this.subMenuAsistencia.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.subMenuAsistencia.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator12,
             this.toolStripMenuItem3,
@@ -2953,6 +2989,26 @@
             this.groupBox1.TabIndex = 472;
             this.groupBox1.TabStop = false;
             // 
+            // lbl_productoDevolucion
+            // 
+            this.lbl_productoDevolucion.AutoSize = true;
+            this.lbl_productoDevolucion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_productoDevolucion.Location = new System.Drawing.Point(166, 536);
+            this.lbl_productoDevolucion.Name = "lbl_productoDevolucion";
+            this.lbl_productoDevolucion.Size = new System.Drawing.Size(17, 20);
+            this.lbl_productoDevolucion.TabIndex = 522;
+            this.lbl_productoDevolucion.Text = "0";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(13, 536);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(81, 20);
+            this.label48.TabIndex = 521;
+            this.label48.Text = "Producto:";
+            // 
             // btn_realizarDevolucion
             // 
             this.btn_realizarDevolucion.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
@@ -2974,7 +3030,7 @@
             this.btn_realizarDevolucion.StateStyles.HoverStyle.BorderGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_realizarDevolucion.StateStyles.HoverStyle.BorderGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_realizarDevolucion.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_realizarDevolucion.StateStyles.HoverStyle.ForegroundImage = ((System.Drawing.Image)(resources.GetObject("resource.ForegroundImage2")));
+            this.btn_realizarDevolucion.StateStyles.HoverStyle.ForegroundImage = ((System.Drawing.Image)(resources.GetObject("resource.ForegroundImage3")));
             this.btn_realizarDevolucion.StateStyles.HoverStyle.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_realizarDevolucion.TabIndex = 520;
             this.btn_realizarDevolucion.TextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3062,6 +3118,7 @@
             // 
             // subMenuJusti
             // 
+            this.subMenuJusti.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.subMenuJusti.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bt_aprobarJustificacion,
             this.toolStripSeparator6,
@@ -3278,7 +3335,7 @@
             this.btn_buscarFolio.StateStyles.HoverStyle.BorderGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_buscarFolio.StateStyles.HoverStyle.BorderGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_buscarFolio.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_buscarFolio.StateStyles.HoverStyle.ForegroundImage = ((System.Drawing.Image)(resources.GetObject("resource.ForegroundImage3")));
+            this.btn_buscarFolio.StateStyles.HoverStyle.ForegroundImage = ((System.Drawing.Image)(resources.GetObject("resource.ForegroundImage4")));
             this.btn_buscarFolio.StateStyles.HoverStyle.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buscarFolio.TabIndex = 52;
             this.btn_buscarFolio.TextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3990,6 +4047,7 @@
             this.dataGV_Credito.Location = new System.Drawing.Point(20, 98);
             this.dataGV_Credito.Name = "dataGV_Credito";
             this.dataGV_Credito.ReadOnly = true;
+            this.dataGV_Credito.RowHeadersWidth = 51;
             this.dataGV_Credito.Size = new System.Drawing.Size(723, 305);
             this.dataGV_Credito.TabIndex = 463;
             this.dataGV_Credito.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGV_Credito_CellClick);
@@ -4042,7 +4100,7 @@
             this.btn_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mini.ForeColor = System.Drawing.Color.White;
             this.btn_mini.Image = ((System.Drawing.Image)(resources.GetObject("btn_mini.Image")));
-            this.btn_mini.Location = new System.Drawing.Point(620, 4);
+            this.btn_mini.Location = new System.Drawing.Point(739, 4);
             this.btn_mini.Name = "btn_mini";
             this.btn_mini.Size = new System.Drawing.Size(32, 32);
             this.btn_mini.TabIndex = 3;
@@ -4056,7 +4114,7 @@
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(566, 4);
+            this.btn_Salir.Location = new System.Drawing.Point(685, 4);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(32, 32);
             this.btn_Salir.TabIndex = 2;
@@ -4067,9 +4125,9 @@
             // 
             this.label8.BackColor = System.Drawing.Color.DarkGreen;
             this.label8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label8.Location = new System.Drawing.Point(0, 804);
+            this.label8.Location = new System.Drawing.Point(0, 763);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1299, 5);
+            this.label8.Size = new System.Drawing.Size(1044, 5);
             this.label8.TabIndex = 7;
             this.label8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -4383,33 +4441,13 @@
             this.elDivider7.TabIndex = 457;
             this.elDivider7.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(13, 536);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(81, 20);
-            this.label48.TabIndex = 521;
-            this.label48.Text = "Producto:";
-            // 
-            // lbl_productoDevolucion
-            // 
-            this.lbl_productoDevolucion.AutoSize = true;
-            this.lbl_productoDevolucion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_productoDevolucion.Location = new System.Drawing.Point(166, 536);
-            this.lbl_productoDevolucion.Name = "lbl_productoDevolucion";
-            this.lbl_productoDevolucion.Size = new System.Drawing.Size(17, 20);
-            this.lbl_productoDevolucion.TabIndex = 522;
-            this.lbl_productoDevolucion.Text = "0";
-            // 
             // Frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1299, 809);
+            this.ClientSize = new System.Drawing.Size(1044, 768);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pnl_titu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -4437,6 +4475,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage2)).EndInit();
             this.elTabPage2.ResumeLayout(false);
             this.elTabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExportar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_bajosInventario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel27)).EndInit();
@@ -4448,7 +4488,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ElLabel6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ElLabel1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.SubMenu_Person.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
@@ -4456,6 +4495,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage3)).EndInit();
             this.elTabPage3.ResumeLayout(false);
             this.elTabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.elLabel37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_aplicarAnticipo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_anticipo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnt_formularioDescuento)).EndInit();
@@ -4476,7 +4516,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.elLabel33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elLabel37)).EndInit();
             this.panel5.ResumeLayout(false);
             this.subMenuAsistencia.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.elLabel11)).EndInit();
@@ -4600,7 +4639,6 @@
         internal Klik.Windows.Forms.v1.EntryLib.ELLabel ElLabel6;
         internal Klik.Windows.Forms.v1.EntryLib.ELLabel ElLabel4;
         internal Klik.Windows.Forms.v1.EntryLib.ELLabel ElLabel2;
-        internal Klik.Windows.Forms.v1.EntryLib.ELLabel ElLabel1;
         private Klik.Windows.Forms.v1.EntryLib.ELDivider elDivider1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolTip toolTip1;
@@ -4666,7 +4704,6 @@
         internal Klik.Windows.Forms.v1.EntryLib.ELLabel elLabel33;
         internal Klik.Windows.Forms.v1.EntryLib.ELLabel elLabel34;
         internal Klik.Windows.Forms.v1.EntryLib.ELLabel elLabel35;
-        internal Klik.Windows.Forms.v1.EntryLib.ELLabel elLabel37;
         private System.Windows.Forms.Label lb_Total;
         internal System.Windows.Forms.Label label23;
         public Klik.Windows.Forms.v1.EntryLib.ELButton btn_aceptar;
@@ -4823,5 +4860,8 @@
         private System.Windows.Forms.TextBox txt_Anticipo;
         internal System.Windows.Forms.Label lbl_productoDevolucion;
         internal System.Windows.Forms.Label label48;
+        internal Klik.Windows.Forms.v1.EntryLib.ELLabel elLabel1;
+        internal Klik.Windows.Forms.v1.EntryLib.ELLabel elLabel37;
+        public Klik.Windows.Forms.v1.EntryLib.ELButton btnExportar;
     }
 }
